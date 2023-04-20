@@ -1,0 +1,32 @@
+<header class="header parto">
+
+    {{ $asset := resources.Get "/logo.png" }}
+    {{ $img := $asset.Fit "300x300" }}
+    <div class="logo_section">
+
+                    <img alt="mtuci logo" src="{{ $asset.RelPermalink }}" />
+
+    </div>
+    <div class ="header_section">
+
+
+
+    <div class="box-3">
+        <div class="btn btn-three">
+          <span>Projects</span>
+        </div>
+      </div>
+      <div onclick="location.href='/blog'"class="box-3" href="/blog">
+        <div class="btn btn-three">
+          Blog
+        </div>
+      </div>
+      <div class="box-3">
+        <div class="btn btn-three">
+          <span>About</span>
+        </div>
+      </div>
+</div>
+<script defer language="javascript" type="text/javascript"  src="/js/header.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</header>

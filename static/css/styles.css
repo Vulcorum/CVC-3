@@ -137,7 +137,7 @@ div[class*=box] {
 /*
 ========================
       firstblock main page
-========================padding: 20% 20% 20% 20%background-image: url('/landscape.jpg');
+========================padding: 20% 20% 20% 20%
 */
 
 .first_block{
@@ -148,9 +148,12 @@ div[class*=box] {
 
 
 }
+.landscape{
+  width: 100%;
+}
 .landscape_section{
   background-color:#e62b2b;
-
+background-image: url('https://vulcorum.github.io/CVC-2/assets/landscape.jpg');
   background-size: cover;
 
   width: 100%;

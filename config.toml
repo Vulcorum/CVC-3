@@ -1,4 +1,4 @@
-baseURL = 'https://vulcorum.github.io/CVC-2/'
+baseURL = '/'
 canonifyURLs = true
 
 languageCode = 'en-us'

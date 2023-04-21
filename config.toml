@@ -1,4 +1,5 @@
 baseURL = 'https://vulcorum.github.io/CVC-2/'
+canonifyURLs = true
 
 languageCode = 'en-us'
 title = 'CVC site'

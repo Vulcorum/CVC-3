@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://vulcorum.github.io/CVC-2/'
 
 languageCode = 'en-us'
 title = 'CVC site'

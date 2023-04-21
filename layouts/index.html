@@ -1,9 +1,11 @@
 {{ define "main" }}
   <main class="parto">
     {{ $asset := resources.Get "/monke.mp4" }}
+    {{ $asset2 := resources.Get "landscape.jpg" }}
     {{ $imge := resources.Get "/monke.mp4" }}
     <div class="first_block">
-    <div class="landscape_section">
+    <div class="landscape_section" style="background-image:url({{ $asset2.RelPermalink }})">
+
  <!--     <video playsinline autoplay muted loop poster="logo.jpg">
         <source src="{{ $asset.RelPermalink }}" type="video/mp4">
         Your browser does not support the video tag.

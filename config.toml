@@ -1,6 +1,5 @@
 baseURL = '/'
-uglyURLs = true
-relativeURLs = true
+
 languageCode = 'en-us'
 title = 'CVC site'
 custom_css = ["css/styles.css"]

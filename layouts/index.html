@@ -1,10 +1,14 @@
 {{ define "main" }}
+
   <main class="parto">
     {{ $asset := resources.Get "/monke.mp4" }}
     {{ $asset2 := resources.Get "/landscape.jpg" }}
     {{ $imge := resources.Get "/monke.mp4" }}
+    {{ $assetland := resources.Get "/landscape.jpg" }}
     <div class="first_block">
-    <div class="landscape_section">
+   <img class="backimage" alt="test" src="{{ $asset2.RelPermalink }}" />
+    <div class="landscape_section"  style="background-image: url('{{ $assetland.RelPermalink }}')">
+
  <!--     <video playsinline autoplay muted loop poster="logo.jpg">
         <source src="{{ $asset.RelPermalink }}" type="video/mp4">
         Your browser does not support the video tag.
@@ -46,7 +50,7 @@
       <div class="post-box">
               <div class="post-content">
                 <video playsinline autoplay muted loop poster="logo.jpg">
-                  <source src="{{ $asset.RelPermalink }}" type="video/mp4">
+                  <source src="{{ .Site.Params.header_image | relURL }}" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               <!-- <p><object><param name="video" value="http://static.video.yandex.ru/lite/z300600/1tzzjftemh.3908/"><param name="allowFullScreen" value="true"><param name="scale" value="noscale"><embed src="http://static.video.yandex.ru/lite/z300600/1tzzjftemh.3908/" type="application/x-shockwave-flash" width="700" height="400" allowfullscreen="true" scale="noscale"> </object></p> -->

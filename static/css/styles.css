@@ -64,14 +64,17 @@ div[class*=box] {
 
 
   .logo_section{
-    padding: 20px 0px 0px  20px;
-    width: 170px;
-    height: 170px;
-    flex-direction: row;
+
+    width: 200px;
+    height: 100%;
+    padding-top: 1%;
+
+    text-align: center;
 
 
-    margin: 0px 400px 0px  0px ;
+    margin: 0px 400px 0px  20px ;
   }
+
   .header_section{
     float: right;
     justify-content:right;
@@ -98,7 +101,7 @@ div[class*=box] {
 */
 .btn-three {
 
-	color: #FFF;
+	color: #EE3523;
 	transition: all 0.5s;
 	position: relative;
 }
@@ -137,7 +140,7 @@ div[class*=box] {
 /*
 ========================
       firstblock main page
-========================padding: 20% 20% 20% 20%
+========================padding: 20% 20% 20% 20%background-image: url("/images/landscape.jpg");
 */
 
 .first_block{
@@ -152,8 +155,8 @@ div[class*=box] {
   width: 100%;
 }
 .landscape_section{
-  background-color:#e62b2b;
-background-image: url('https://vulcorum.github.io/CVC-2/assets/landscape.jpg');
+  background-color:#f08a5b00;
+
   background-size: cover;
 
   width: 100%;
@@ -179,6 +182,15 @@ float: right;
   font-weight: 900;
   font-family:monospace;
 }
+.backimage{
+
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
 /*
 ========================
       secondblock main page
@@ -187,7 +199,7 @@ float: right;
 .second_block{
   width: 100%;
   height: 1700px;
-  background-color: #e9e8e8;
+  background-color: #333333;
   padding: 50px 0px 0px 0px;
 }
 
@@ -221,8 +233,8 @@ float: right;
 
   width: 100%;
   height: 1000px;
-  padding: 5% 5% 5% 5%;
-  background-color: #f1f1f1;
+
+  background-color: #818181;
 
 
 }
@@ -240,9 +252,9 @@ float: right;
     }
 
     #block-for-slider {
+      background-color: #818181;
       width: 80%;
-      margin: 0 auto;
-      margin-top: 100px;
+      margin: 100px 100px 100px 100px;
   }
 
   #viewport {
@@ -335,5 +347,6 @@ float: right;
 */
 .footer{
   width: 100%;
-  background-color: #c2c2c2;
+  background-color: #000000;
+  color: #ffffff;
 }

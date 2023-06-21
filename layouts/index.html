@@ -2,11 +2,13 @@
 
   <main class="parto">
     {{ $asset := resources.Get "/monke.mp4" }}
-    {{ $asset2 := resources.Get "/landscape.jpg" }}
+    {{ $asset2 := resources.Get "/landscape2.jpg" }}
     {{ $imge := resources.Get "/monke.mp4" }}
     {{ $assetland := resources.Get "/landscape.jpg" }}
+    {{ $placehold1 := resources.Get "/slider-placeholder1.png" }}
+    {{ $placehold2 := resources.Get "/slider-placeholder2.png" }}
     <div class="first_block">
-   <img class="backimage" alt="test" src="{{ $asset2.RelPermalink }}" />
+   <img class="backimage" alt="test" src="{{ $assetland.RelPermalink }}" />
     <div class="landscape_section"  style="background-image: url('{{ $assetland.RelPermalink }}')">
 
  <!--     <video playsinline autoplay muted loop poster="logo.jpg">
@@ -96,8 +98,8 @@
     <div id="block-for-slider">
       <div id="viewport">
           <ul id="slidewrapper">
-              <li class="slide"><img src="https://hsto.org/files/8d4/b19/80d/8d4b1980d48c418090e2c4466d8c06e1.jpg" alt="1" class="slide-img"></li>
-              <li class="slide"><img src="https://hsto.org/files/ef1/3d7/97e/ef13d797e4c642c7a1d4b2b91f7ad7b3.jpg" alt="2" class="slide-img"></li>
+              <li class="slide"><img src="{{ $placehold1.RelPermalink }}" alt="1" class="slide-img"></li>
+              <li class="slide"><img src="{{ $placehold2.RelPermalink }}" alt="2" class="slide-img"></li>
               <li class="slide"><img src="https://hsto.org/files/ec5/592/f1e/ec5592f1e814401eb38305682a8e88d4.jpg" alt="3" class="slide-img"></li>
               <li class="slide"><img src="https://hsto.org/files/eda/61a/3c5/eda61a3c53db408d820643998d9acd81.jpg" alt="4" class="slide-img"></li>
           </ul>
@@ -116,6 +118,17 @@
       </div>
   </div>
   </div>
+
+  <div class="fourth_block">
+    <div onclick="location.href='/projects'"class="boxer" href="/projects">
+      <div class="btn btn-three3">
+        Blog
+      </div>
+    </div>
+
+
+  </div>
+
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

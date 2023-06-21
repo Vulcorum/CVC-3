@@ -19,41 +19,35 @@ body {
   width: 100%;
 }
 
-div[class*=boxer3] {
+div[class*=box] {
 	height: 33.33%;
 	width: 100%;
   display: flex;
-  margin: 0px 30px 0px  0px ;
+  margin: 0px 50px 0px  0px ;
 
   align-items: center;
 }
 
-.boxer3 {
-
-  background-color: #ffffff; }
+.box-3 { background-color: #000000; }
 
 .btn {
   font-size: 20px;
 	line-height: 51px;
 	height: 50px;
 	text-align: center;
-	width: 180px;
+	width: 250px;
 	cursor: pointer;
 }
 
 
 
 
-/*
-========================
-      header
-========================
-*/
+  /*header*/
   .header{
     z-index: 100;
     display: flex;
     flex-direction: row;
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
     padding: 10px;
     width: 100%;
     font-family: monospace;
@@ -108,7 +102,7 @@ div[class*=boxer3] {
 */
 .btn-three {
 
-	color: #372579;
+	color: #EE3523;
 	transition: all 0.5s;
 	position: relative;
 }
@@ -137,7 +131,7 @@ div[class*=boxer3] {
 	z-index: 1;
 	opacity: 0;
 	transition: all 0.3s;
-	border: 2px solid rgba(55,37,121,0.5);
+	border: 1px solid rgba(255,255,255,0.5);
 	transform: scale(1.2,1.2);
 }
 .btn-three:hover::after {
@@ -210,7 +204,7 @@ float: right;
 .second_block{
   width: 100%;
   height: 1700px;
-  background-color: #ffffff;
+  background-color: #333333;
   padding: 50px 0px 0px 0px;
 }
 
@@ -245,7 +239,7 @@ float: right;
   width: 100%;
   height: 1000px;
 
-  background-color: #3725795e;
+  background-color: #818181;
 
 
 }
@@ -264,8 +258,7 @@ float: right;
     }
 
     #block-for-slider {
-     background-color: #37257928;
-
+      background-color: #818181;
       width: 100%;
       padding-left: 5%;
       padding-right: 5%;
@@ -367,22 +360,15 @@ float: right;
     height: 800px;
     position:relative;
     padding-bottom:50px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(71, 71, 71);
   }
   .boxer{
-
-      height: 33.33%;
-      width: 100%;
-      display: flex;
-      margin: 0px 30px 0px  0px ;
-
-      align-items: center;
-
-
+    position:absolute;
+    bottom: 100px;
   }
   .btn-three3 {
 
-    color: #372579;
+    color: #EE3523;
     transition: all 0.5s;
     position: relative;
     width: 10%;
@@ -399,7 +385,7 @@ float: right;
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255,255,255,0.1);
     transition: all 0.3s;
   }
   .btn-three3:hover::before {
@@ -416,7 +402,7 @@ float: right;
     z-index: 1;
     opacity: 0;
     transition: all 0.3s;
-    border: 1px solid rgba(55,37,121,0.5);
+    border: 1px solid rgba(255,255,255,0.5);
     transform: scale(1.2,1.2);
   }
   .btn-three3:hover::after {

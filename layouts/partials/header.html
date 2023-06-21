@@ -1,6 +1,7 @@
 <header class="header parto">
 
     {{ $assetred := resources.Get "/logo_redrzhd.png" }}
+    {{ $assetd := resources.Get "/logo_dark.png" }}
     {{ $assetblack := resources.Get "/logo_white.png" }}
     {{ $img := $assetred.Fit "300x300" }}
     {{ $img := $assetblack.Fit "300x300" }}
@@ -8,26 +9,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <div class="logo_section">
 
-                    <img id = "logo" alt="mtuci logo" src="{{ $assetred.RelPermalink }}" />
+                   <a href="/"> <img  id = "logo" alt="mtuci logo" src="{{ $assetd.RelPermalink }}" /></a>
 
     </div>
     <div class ="header_section">
 
 
 
-    <div class="box-3">
+      <div onclick="location.href='/projects'"class="boxer3" href="/projects">
         <div class="btn btn-three">
-          <span>Projects</span>
+         Проекты
         </div>
       </div>
-      <div onclick="location.href='/blog'"class="box-3" href="/blog">
+      <div onclick="location.href='/projects'"class="boxer3" href="/projects">
         <div class="btn btn-three">
-          Blog
+         Публикации
         </div>
       </div>
-      <div class="box-3">
+      <div onclick="location.href='/projects'"class="boxer3" href="/projects">
         <div class="btn btn-three">
-          <span>About</span>
+         Семинары
+        </div>
+      </div>
+      <div onclick="location.href='/blog'"class="boxer3" href="/blog">
+        <div class="btn btn-three">
+          Блог
+        </div>
+      </div>
+      <div onclick="location.href='/about'"class="boxer3" href="/about">
+        <div class="btn btn-three">
+         О нас
         </div>
       </div>
 </div>

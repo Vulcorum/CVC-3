@@ -20,18 +20,18 @@ $(function() {
           'background': 'white',
           'padding-top':'0.15%',
         });
-        document.getElementById("logo").src="images/logo_redrzhd.png";
+        //document.getElementById("logo").src="images/logo_redrzhd.png";
     } else {
         $('.header').css({
            'height': '140px',
           'padding': '15px 0',
-          'background': 'black',
+          'background': 'white',
           'padding-top':'1%',
 
 
           'transition': '.3s'
         });
-        document.getElementById("logo").src="images/logo_redrzhd.png";
+        //document.getElementById("logo").src="images/logo_redrzhd.png";
     }
     });
    });

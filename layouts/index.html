@@ -1,5 +1,5 @@
 {{ define "main" }}
-
+  <script defer language="javascript" type="text/javascript"  src="/js/index.js"></script>
   <main class="parto">
     {{ $asset := resources.Get "/monke.mp4" }}
     {{ $asset2 := resources.Get "/landscape2.jpg" }}
@@ -7,93 +7,39 @@
     {{ $assetland := resources.Get "/landscape.jpg" }}
     {{ $placehold1 := resources.Get "/slider-placeholder1.png" }}
     {{ $placehold2 := resources.Get "/slider-placeholder2.png" }}
-    <div class="first_block">
-   <img class="backimage" alt="test" src="{{ $assetland.RelPermalink }}" />
-    <div class="landscape_section"  style="background-image: url('{{ $assetland.RelPermalink }}')">
-
- <!--     <video playsinline autoplay muted loop poster="logo.jpg">
-        <source src="{{ $asset.RelPermalink }}" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <div id="vantaback1"></div>
+    <section class="first_block" id="vant">
 
 
-                      <img alt="landscape" src="{{ $asset.RelPermalink }}" />
-<!-->
+
 
                     <div class="part">
                       <div class="hello">
 
-                        <h1 class="hello">Добро пожаловать в Лабораторию обработки изображений и видео (LIVE) Техасского университета в Остине . LIVE управляется профессором Аланом С. Бовиком , расположенным в здании Инженерно-образовательного исследовательского центра (EER) UT, и является частью факультета электротехники и вычислительной техники Техасского университета в Остине. Он входит в группу Wireless Networking and Communications Group (WNCG).
+                        <h1 class="helloh">ЦЕНТР КОМПЬЮТЕРНОГО ЗРЕНИЯ
                         </h1>
                      <!-- {{ range first 1 .Site.RegularPages }}
                           {{ .Render "summary" }}
-                      {{ end }}-->
+                      {{ end }} <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>-->
                     </div>
                     </div>
 
     </div>
-  </div>
-  <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
-  <div class="second_block">
+    </section>
 
-    <table class="videos"><tr><td>
-      <div class="post-box">
-              <div class="post-content">
-                <video playsinline autoplay muted loop poster="logo.jpg">
-                  <source src="{{ $asset.RelPermalink }}" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              <!-- <p><object><param name="video" value="/asset/monke.mp4"><param name="allowFullScreen" value="true"><param name="scale" value="noscale"><embed src="/asset/monke.mp4" type="mp4" width="700" height="400" allowfullscreen="true" scale="noscale"> </object></p> -->
-              <p class="textic">Это очень интересное видео, в нем полностью раскрывается приспособление кенгуру в мире бокса.</p>
-              </div>
-      </div>
-      </td>
-      <td>
-      <div class="post-box">
-              <div class="post-content">
-                <video playsinline autoplay muted loop poster="logo.jpg">
-                  <source src="{{ .Site.Params.header_image | relURL }}" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              <!-- <p><object><param name="video" value="http://static.video.yandex.ru/lite/z300600/1tzzjftemh.3908/"><param name="allowFullScreen" value="true"><param name="scale" value="noscale"><embed src="http://static.video.yandex.ru/lite/z300600/1tzzjftemh.3908/" type="application/x-shockwave-flash" width="700" height="400" allowfullscreen="true" scale="noscale"> </object></p> -->
-              <p class="textic">Это очень интересное видео, в нем полностью раскрывается приспособление кенгуру в мире бокса.</p>
-              </div>
-      </div>
-      </td></tr>
-        <tr><td>
-          <div class="post-box">
-          <div class="post-content">
-            <p><object><param name="video" value="http://static.video.yandex.ru/lite/z300600/1tzzjftemh.3908/"><param name="allowFullScreen" value="true"><param name="scale" value="noscale"><embed src="http://static.video.yandex.ru/lite/z300600/1tzzjftemh.3908/" type="application/x-shockwave-flash" width="700" height="400" allowfullscreen="true" scale="noscale"> </object></p>
-            <p class="textic">Это очень интересное видео, в нем полностью раскрывается приспособление кенгуру в мире бокса.</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <div class="post-box">
-        <div class="post-content">
-          <p><object><param name="video" value="http://static.video.yandex.ru/lite/z300600/1tzzjftemh.3908/"><param name="allowFullScreen" value="true"><param name="scale" value="noscale"><embed src="http://static.video.yandex.ru/lite/z300600/1tzzjftemh.3908/" type="application/x-shockwave-flash" width="700" height="400" allowfullscreen="true" scale="noscale"> </object></p>
-          <p class="textic">Это очень интересное видео, в нем полностью раскрывается приспособление кенгуру в мире бокса.</p>
-        </div>
-      </div>
-      </td></tr>
-      <tr><td>
-        <div class="post-box">
-          <div class="post-content">
-            <p><object><param name="video" value="http://static.video.yandex.ru/lite/z300600/1tzzjftemh.3908/"><param name="allowFullScreen" value="true"><param name="scale" value="noscale"><embed src="http://static.video.yandex.ru/lite/z300600/1tzzjftemh.3908/" type="application/x-shockwave-flash" width="700" height="400" allowfullscreen="true" scale="noscale"> </object></p>
-            <p class="textic">Это очень интересное видео, в нем полностью раскрывается приспособление кенгуру в мире бокса.</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <div class="post-box">
-        <div class="post-content">
-          <p><object><param name="video" value="http://static.video.yandex.ru/lite/z300600/1tzzjftemh.3908/"><param name="allowFullScreen" value="true"><param name="scale" value="noscale"><embed src="http://static.video.yandex.ru/lite/z300600/1tzzjftemh.3908/" type="application/x-shockwave-flash" width="700" height="400" allowfullscreen="true" scale="noscale"> </object></p>
-          <p class="textic">Это очень интересное видео, в нем полностью раскрывается приспособление кенгуру в мире бокса.</p>
-        </div>
-      </div>
-      </td></tr></table>
+  <section class="second_block">
+  <div class="vanta-back2-container">
+      <div id="vantaback2"></div>
+    </div>
+    <div class="article_block"></div>
+    <div class="article_block"></div>
+    <div class="article_block"></div>
+    <div class="article_block"></div>
+    <div class="article_block"></div>
+    <div class="article_block"></div>
 
-  </div>
+
+    </section>
   <div class="third_block">
     <div id="block-for-slider">
       <div id="viewport">
@@ -133,6 +79,12 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+
+
+  <script src="/js/cdnjs.cloudflare.com_ajax_libs_three.js_r134_three.min.js"></script>
+  <script src="/js/vanta.globe.min.js"></script>
+  <script src="/js/vanta.dots.min.js"></script>
+  <script src="/js/vanta-controller.js"></script>
   <script src="/js/slider.js"></script>
   </main>
 {{ end }}

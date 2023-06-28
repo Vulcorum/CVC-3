@@ -16,21 +16,38 @@ $(function() {
       }
       if($(this).scrollTop() > 1) {
         $('.header').css({
-          'height': '100px',
-          'background': 'white',
-          'padding-top':'0.15%',
+          'height': '12vh',
+          'transition': '.3s'
+
         });
-        //document.getElementById("logo").src="images/logo_redrzhd.png";
+        $('.logo_section').css({
+          'width': '30vh',
+          'transition': '.3s'
+
+        });
+        $('.header_section').css({
+          'margin-bottom': '2vh',
+          'transition': '.3s'
+
+        });
+
+
     } else {
         $('.header').css({
-           'height': '140px',
-          'padding': '15px 0',
-          'background': 'white',
-          'padding-top':'1%',
-
-
+           'height': '15vh',
           'transition': '.3s'
         });
+        $('.logo_section').css({
+          'width': '35vh',
+          'transition': '.3s'
+
+        });
+        $('.header_section').css({
+          'margin-bottom': '4vh',
+          'transition': '.3s'
+
+        });
+
         //document.getElementById("logo").src="images/logo_redrzhd.png";
     }
     });

@@ -1,6 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap';
 
 
+element{
+--article-height:500px
+
+}
 body {
   width: 100%;
 
@@ -20,12 +25,12 @@ body {
 }
 
 div[class*=boxer3] {
-	height: 33.33%;
-	width: 100%;
+
   display: flex;
-  margin: 0px 30px 0px  0px ;
+
 
   align-items: center;
+  text-align: center;
 }
 
 .boxer3 {
@@ -33,11 +38,12 @@ div[class*=boxer3] {
   background-color: #ffffff; }
 
 .btn {
-  font-size: 20px;
-	line-height: 51px;
-	height: 50px;
-	text-align: center;
-	width: 180px;
+
+
+	height: 6vh;
+  padding-top: 1.3vh;
+	text-align:center;
+	width: 20vh;
 	cursor: pointer;
 }
 
@@ -54,13 +60,14 @@ div[class*=boxer3] {
     display: flex;
     flex-direction: row;
     background: rgb(255, 255, 255);
-    padding: 10px;
+
     width: 100%;
     font-family: monospace;
-    height: 140px;
-    padding-bottom: 25px;
+    height: 15vh;
+
     border-bottom: ridge;
     border-color: #000000;
+    position: relative;
 
   }
   .header_fixed {
@@ -72,24 +79,31 @@ div[class*=boxer3] {
 
   .logo_section{
 
-    width: 200px;
-    height: 100%;
-    padding-top: 1%;
+    bottom: 0;
+    left: 0;
+
+    width: 30vh;
+    margin-top: 2vh;
+    margin-left:1vh ;
+
+
 
     text-align: center;
 
 
-    margin: 0px 400px 0px  20px ;
+    margin-right: 0vh;
   }
 
   .header_section{
+    position: absolute;
     float: right;
     justify-content:right;
     display: flex;
     align-items:flex-end;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    position: absolute; right: 0px;
+
+    margin-bottom: 5vh;
+    bottom: 0px;
+    right: 0px;
   }
 
 .bottom-line{
@@ -111,6 +125,8 @@ div[class*=boxer3] {
 	color: #372579;
 	transition: all 0.5s;
 	position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vh;
 }
 .btn-three::before {
 	content: '';
@@ -149,8 +165,20 @@ div[class*=boxer3] {
       firstblock main page
 ========================padding: 20% 20% 20% 20%background-image: url("/images/landscape.jpg");
 */
+#vantaback1{
+  z-index:-6;
 
+  width: 100%;
+  height: 100vh;
+
+  background-color:red;
+  position:fixed;
+  top:0;
+}
 .first_block{
+  height: 100vh;
+  display:flex;
+
   width: 100%;
   height: 800px;
 
@@ -161,27 +189,27 @@ div[class*=boxer3] {
 .landscape{
   width: 100%;
 }
-.landscape_section{
-  background-color:#47281a00;
-
-  background-size: cover;
 
 
-  width: 100%;
-  height: 800px;
 
+.helloh{
 
-}
-.hello{
-  color: #0a4e32
+  color: #372579;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  font-weight: bolder;
 }
 
 .part{
-  width: 40%;
-  margin: 70px 300px 20px 20px;
+  top: 0;
+  left: 0;
+  width: 60%;
+  margin-top: 1vh;
+  margin-left: 2vh;
   height: 500px;
-  background-color: rgba(50, 47, 41, 0.4);
-float: right;
+  text-decoration-color: #372579;
+  background-color: #37257900;
+  float: left;
 
 }
 .hello{
@@ -207,13 +235,41 @@ float: right;
       secondblock main page
 ========================padding: 20% 20% 20% 20%
 */
+
 .second_block{
   width: 100%;
-  height: 1700px;
+  height: auto;
+
+}
+.article_block{
+  justify-content: center;
+  align-content: center;
+  display: inline-block;
+  flex-wrap: wrap;
+  height: 50vh;
+  width: 33%;
+  margin:5vh 0px 5vh 10%;
   background-color: #ffffff;
-  padding: 50px 0px 0px 0px;
+  border: solid;
+  border-radius: 2vh;
+  border-color: #372579;
+  border-width: 0.5vh;
 }
 
+.vanta-back2-container{
+  height:182vh;
+  width:100%;
+
+  position: absolute;
+
+
+}
+#vantaback2{
+  z-index:-5;
+  height:100vh;
+  position: sticky;
+  top:0;
+}
 .videos{
   display: flex;
   justify-content: center;
@@ -243,9 +299,9 @@ float: right;
 .third_block{
 
   width: 100%;
-  height: 1000px;
+  height: auto;
 
-  background-color: #3725795e;
+  background-color: #37257913;
 
 
 }
@@ -264,7 +320,7 @@ float: right;
     }
 
     #block-for-slider {
-     background-color: #37257928;
+     background-color: #e2def1;
 
       width: 100%;
       padding-left: 5%;
@@ -316,7 +372,7 @@ float: right;
       position: absolute;
       width: 50px;
       height: 50px;
-      background-color: #fff;
+      background-color: #3725792f;
       border-radius: 50%;
       top: calc(50% - 25px);
   }
@@ -432,9 +488,10 @@ float: right;
 .section{
   width: 100%;
   height:auto;
+  min-height: calc(70vh);
 }
 .onesumm{
-  background-color: #ffffff;
+  background-color: #ffffff00;
   height: 200px;
   width: 100%;
 }
@@ -444,6 +501,21 @@ float: right;
   height: 200px;
 
 
+}
+.vanta-backlist-container{
+  height: 1700px;
+  width:100%;
+
+  position: absolute;
+
+
+}
+#vantalist{
+  background-color:red;
+  z-index:-5;
+  height:1000px;
+  position: sticky;
+  top:0;
 }
 /*margin: 20% 20% 20% 20%;float: right;
 ========================

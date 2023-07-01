@@ -7,7 +7,7 @@
     <h1 class="title">{{ .Title }}</h1>
     <div class="onesumm">
       {{ range .Pages  }}
-      {{ .Render .Content }}
+      {{ .Render "summary" }}
       {{ end }}
     </div>
   </main>

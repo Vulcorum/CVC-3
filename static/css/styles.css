@@ -242,14 +242,15 @@ div[class*=boxer3] {
 
 }
 .article_block{
+  padding: 1vh;
   justify-content: center;
   align-content: center;
   display: inline-block;
   flex-wrap: wrap;
-  height: 50vh;
+  height: auto;
   width: 33%;
   margin:5vh 0px 5vh 10%;
-  background-color: #ffffff;
+  background-color: #fffffff3;
   border: solid;
   border-radius: 2vh;
   border-color: #372579;
@@ -294,7 +295,11 @@ div[class*=boxer3] {
       thirdblock main page
 ========================padding: 20% 20% 20% 20%
 */
-
+.twothree{
+  width: 100%;
+  height: 700px;
+  background-color: #ffffff;
+}
 
 .third_block{
 
@@ -530,4 +535,18 @@ div[class*=boxer3] {
   bottom: 0;
 
 
+}
+.content{
+  justify-content: center;
+  width: 80%;
+}
+.boxsem{
+  
+  height: auto;
+  width: 100%;
+}
+.boxsemlist{
+  
+  height: auto;
+  width: 100%;
 }

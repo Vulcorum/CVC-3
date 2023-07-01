@@ -31,13 +31,51 @@
   <div class="vanta-back2-container">
       <div id="vantaback2"></div>
     </div>
-    <div class="article_block"></div>
-    <div class="article_block"></div>
-    <div class="article_block"></div>
-    <div class="article_block"></div>
-    <div class="article_block"></div>
-    <div class="article_block"></div>
+    <div class="article_block">
+      {{ range where .Pages "Section" "seminars" }}
+      {{ range where .Pages "Params.tags" "intersect" (slice "index1") }}
+      {{ .Render "seminarsummary"}}
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="article_block">
+      {{ range where .Pages "Section" "seminars" }}
+      {{ range where .Pages "Params.tags" "intersect" (slice "index2") }}
+      {{ .Render "seminarsummary"}}
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="article_block">
+      {{ range where .Pages "Section" "seminars" }}
+      {{ range where .Pages "Params.tags" "intersect" (slice "index3") }}
+      {{ .Render "seminarsummary"}}
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="article_block">
+      {{ range where .Pages "Section" "seminars" }}
+      {{ range where .Pages "Params.tags" "intersect" (slice "index4") }}
+      {{ .Render "seminarsummary"}}
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="article_block">
+      {{ range where .Pages "Section" "seminars" }}
+      {{ range where .Pages "Params.tags" "intersect" (slice "index5") }}
+      {{ .Render "seminarsummary"}}
+      {{ end }}
+      {{ end }}
+     </div>
 
+    <div class="article_block">{{ range where .Pages "Section" "seminars" }}
+      {{ range where .Pages "Params.tags" "intersect" (slice "index6") }}
+      {{ .Render "seminarsummary"}}
+      {{ end }}
+      {{ end }}</div>
+
+
+    </section>
+    <section class="twothree">
 
     </section>
   <div class="third_block">

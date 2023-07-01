@@ -8,3 +8,9 @@ header_image = "images/landscape.jpg"
 
 [params]
 featured_image = "images/landscape.jpg"
+
+[menu]
+  [[menu.main]]
+    identifier = "hugo-post"
+    name = "Hugo Post"
+    url = "/post"

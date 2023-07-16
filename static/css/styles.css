@@ -201,6 +201,15 @@ div[class*=boxer3] {
   font-size: 70px;
   font-weight: bolder;
 }
+.bout{
+  width: 70%;
+  margin-left: 15%;
+
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4vh;
+  font-weight: bolder;
+}
 
 .part{
   top: 0;
@@ -548,7 +557,7 @@ div[class*=boxer3] {
 }
 .onesumm{
   background-color: #ffffff00;
-  height: 200px;
+  height: auto;
   width: 100%;
 }
 
@@ -559,17 +568,34 @@ div[class*=boxer3] {
 
 }
 .vanta-backlist-container{
-  height: 1700px;
+  height: auto;
+  
   width:100%;
 
   position: absolute;
 
 
 }
+.box{
+  height: 100%;
+  width: 100%;
+}
+.sem-pattern{
+  height: auto;
+  margin-bottom: 3vh;
+  width: 60%;
+  margin-left: 20%;
+}
+.st{
+  height: auto;
+  margin-bottom: 3vh;
+  width: 60%;
+  margin-left: 20%;
+}
 #vantalist{
   background-color:red;
   z-index:-5;
-  height:1000px;
+  height:auto;
   position: sticky;
   top:0;
 }
@@ -608,12 +634,14 @@ div[class*=boxer3] {
 */
 .twothree{
   
-  height: 1000px;
+  height: auto;
+  min-height: calc(10vh + 33vw);
   padding-top: 10vh;
 }
 
 .swiffy-slider{
-  height: 90%;
+  height: auto;
+  min-height: 33vw;
   
 }
 .slider-container{
